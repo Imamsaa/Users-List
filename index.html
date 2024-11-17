@@ -7,93 +7,179 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Rating Card</title>
+  <title>User List</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="card mt-5 pt-5-mb-5 rounded-4 border-0 shadow-lg text-bg-light">
-      <div class="card-body">
-        <div class="row p-5">
-          <div class="col-7">
-            <h2 class="fw-bold">What other think abaout products</h2>
-          </div>
-          <div class="col-5">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="display-5 fw-semibold">
-                  <i class="fas fa-star text-warning"></i> 4.8
-                </h3>
-                <p class="text-muted text-center">Average Rating</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row px-5">
-          <div class="col-12">
-            <div class="input-group">
-              <span class="input-group-text rounded-start-5 fas fa-search border p-3"></span>
-              <input type="text" name="" id="" class="form-control rounded-end-5">
-            </div>
-          </div>
-        </div>
-        <div class="row p-5">
-          <div class="col-12 vstack gap-3">
-            <div class="d-flex align-items-center gap-1">
-              5<i class="fas fa-star text-warning"></i>
-              <div class="progress ms-2" style="width:100%">
-                <div class="progress-bar bg-warning" style="width:80%;" role="progressbar" aria-valuenow="80"
-                  aria-valuemax="100" aria-valuemin="0">
-                </div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-1">
-              4<i class="fas fa-star text-warning"></i>
-              <div class="progress ms-2" style="width:100%">
-                <div class="progress-bar bg-warning" style="width:80%;" role="progressbar" aria-valuenow="80"
-                  aria-valuemax="100" aria-valuemin="0">
-                </div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-1">
-              3<i class="fas fa-star text-warning"></i>
-              <div class="progress ms-2" style="width:100%">
-                <div class="progress-bar bg-warning" style="width:80%;" role="progressbar" aria-valuenow="80"
-                  aria-valuemax="100" aria-valuemin="0">
-                </div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-1">
-              2<i class="fas fa-star text-warning"></i>
-              <div class="progress ms-2" style="width:100%">
-                <div class="progress-bar bg-warning" style="width:80%;" role="progressbar" aria-valuenow="80"
-                  aria-valuemax="100" aria-valuemin="0">
-                </div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-1">
-              1<i class="fas fa-star text-warning"></i>
-              <div class="progress ms-2" style="width:100%">
-                <div class="progress-bar bg-warning" style="width:80%;" role="progressbar" aria-valuenow="80"
-                  aria-valuemax="100" aria-valuemin="0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row px-5 pb-4">
-          <div class="col-12">
-            <button class="btn btn-success rounded-5 btn-lg">View Rating</button>
+  <header>
+    <div class="container">
+      <div class="row mt-5 mb-2">
+        <div class="col-12 d-flex justify-content-end">
+          <div class="btn-group">
+            <button class="btn btn-secondary" data-bs-theme-value="dark">Dark</button>
+            <button class="btn btn-light" data-bs-theme-value="light">Light</button>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>User List</h2>
+        </div>
+      </div>
+      <div class="row mt-2 mb-2">
+        <div class="col-md-4">
+          <input type="text" name="" id="" class="form-control" placeholder="Search User">
+        </div>
+        <div class="col-md-8 user-menu d-flex justify-content-end align-items-center">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="" class="nav-link">Repotation</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-bg-primary rounded-3">User List</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Editors</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Moderators</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 mt-3">
+          <div class="card" data-bs-toggle="popover" data-bs-container="body" data-bs-placement="top"
+            data-bs-content="Emai: imamsafii@gmail.com">
+            <div class=" card-body d-flex gap-2">
+              <div class="row">
+                <div class="user-img col-5">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQH9U2LC7g_AjA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729069237780?e=2147483647&v=beta&t=srXHEpk1xWgE_rMzOYQXwDp7jbhSm9eu_EtNLRV0vQc"
+                    alt="" class="img-fluid rounded-circle">
+                </div>
+                <div class="user-info col-7">
+                  <h4>Lex Luthor</h4>
+                  <h6>Software Enginer</h6>
+                  <span class="badge bg-primary">Arsitec</span>
+                  <span class="badge bg-primary">Superhuman</span>
+                  <span class="badge bg-primary">Antihero</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card" data-bs-toggle="popover" data-bs-container="body" data-bs-placement="top"
+            data-bs-content="Emai: imamsafii@gmail.com">
+            <div class=" card-body d-flex gap-2">
+              <div class="row">
+                <div class="user-img col-5">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQH9U2LC7g_AjA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729069237780?e=2147483647&v=beta&t=srXHEpk1xWgE_rMzOYQXwDp7jbhSm9eu_EtNLRV0vQc"
+                    alt="" class="img-fluid rounded-circle">
+                </div>
+                <div class="user-info col-7">
+                  <h4>Lex Luthor</h4>
+                  <h6>Software Enginer</h6>
+                  <span class="badge bg-primary">Arsitec</span>
+                  <span class="badge bg-primary">Superhuman</span>
+                  <span class="badge bg-primary">Antihero</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card" data-bs-toggle="popover" data-bs-container="body" data-bs-placement="top"
+            data-bs-content="Emai: imamsafii@gmail.com">
+            <div class=" card-body d-flex gap-2">
+              <div class="row">
+                <div class="user-img col-5">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQH9U2LC7g_AjA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729069237780?e=2147483647&v=beta&t=srXHEpk1xWgE_rMzOYQXwDp7jbhSm9eu_EtNLRV0vQc"
+                    alt="" class="img-fluid rounded-circle">
+                </div>
+                <div class="user-info col-7">
+                  <h4>Lex Luthor</h4>
+                  <h6>Software Enginer</h6>
+                  <span class="badge bg-primary">Arsitec</span>
+                  <span class="badge bg-primary">Superhuman</span>
+                  <span class="badge bg-primary">Antihero</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card" data-bs-toggle="popover" data-bs-container="body" data-bs-placement="top"
+            data-bs-content="Emai: imamsafii@gmail.com">
+            <div class=" card-body d-flex gap-2">
+              <div class="row">
+                <div class="user-img col-5">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQH9U2LC7g_AjA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729069237780?e=2147483647&v=beta&t=srXHEpk1xWgE_rMzOYQXwDp7jbhSm9eu_EtNLRV0vQc"
+                    alt="" class="img-fluid rounded-circle">
+                </div>
+                <div class="user-info col-7">
+                  <h4>Lex Luthor</h4>
+                  <h6>Software Enginer</h6>
+                  <span class="badge bg-primary">Arsitec</span>
+                  <span class="badge bg-primary">Superhuman</span>
+                  <span class="badge bg-primary">Antihero</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card" data-bs-toggle="popover" data-bs-container="body" data-bs-placement="top"
+            data-bs-content="Emai: imamsafii@gmail.com">
+            <div class=" card-body d-flex gap-2">
+              <div class="row">
+                <div class="user-img col-5">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQH9U2LC7g_AjA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729069237780?e=2147483647&v=beta&t=srXHEpk1xWgE_rMzOYQXwDp7jbhSm9eu_EtNLRV0vQc"
+                    alt="" class="img-fluid rounded-circle">
+                </div>
+                <div class="user-info col-7">
+                  <h4>Lex Luthor</h4>
+                  <h6>Software Enginer</h6>
+                  <span class="badge bg-primary">Arsitec</span>
+                  <span class="badge bg-primary">Superhuman</span>
+                  <span class="badge bg-primary">Antihero</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 d-flex justify-content-center">
+          <ul class="pagination">
+            <li class="page-item"><a href="" class="page-link">Previus</a></li>
+            <li class="page-item"><a href="" class="page-link active">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item"><a href="" class="page-link">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script>
+    const popover = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverlist = [...popover].map(
+      (popoverges) => new bootstrap.Popover(popoverges)
+    );
+  </script>
 </body>
 
 </html>
